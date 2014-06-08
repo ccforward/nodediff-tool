@@ -16,7 +16,7 @@ var srcFile = args[0],
 	tgtFile = args[1];
 
 
-if(!srcFile || !tgtFile){ console.log("Parameters can not be empty. \nExample command: nodediff file1 file2. \nYou can access the \"https://github.com/supersha/nodediff\" for more detail."); process.exit(1); }
+if(!srcFile || !tgtFile){ console.log("Parameters can not be empty."); process.exit(1); }
 
 
 function handleDiff(src, des){
@@ -40,13 +40,14 @@ function handleDiff(src, des){
 			});
 		});
 	});
-
 	tmpData.forEach(function(item, index){
 		var it = null;
 		//如果是有added/removed的，则输出上下附近两行的代码
 		if(item.modify){
 			for(var i = index - 2; i < index + 3; i++){
-				it = tmpData[i];
+				// console.log(index);return;
+				it = tmpData[index];
+				// it = tmpData[i];
 
 				//处理连续两项都modify的情况
 				if(it.modify && i == index + 1){ return; }

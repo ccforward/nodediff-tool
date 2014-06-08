@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Nodejs 文件比较",
   "main": "app.js",
+  "private": false,
   "dependencies": {
     "bufferhelper": "~0.2.0",
     "colors": "~0.6.2",
@@ -10,16 +11,27 @@
     "diff": "~1.0.7",
     "async": "~0.2.6"
   },
-  "bin" : {
-    "ndiff" :"app.js"
+  "bin": {
+    "ndiff": "app.js"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/ccforward/nodediff-tool.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccforward/nodediff-tool.git"
   },
-  "author": "cc"
+  "author": "cc",
+  "bugs": {
+    "url": "https://github.com/ccforward/nodediff-tool/issues"
+  },
+  "homepage": "https://github.com/ccforward/nodediff-tool",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "diff"
+  ],
+  "license": "ISC"
 }
