@@ -1,0 +1,29 @@
+html {
+    font-size: 15px;
+    width: 90%;
+    height: 80%;
+}
+
+body {
+    color: #333;
+    width: 90%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #FFF;
+}
+
+ul, ol {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-after: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+}
+.wrap {
+    width: 990px;
+    min-height; 1000px;
+}
