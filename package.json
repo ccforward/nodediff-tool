@@ -1,0 +1,25 @@
+{
+  "name": "diff-tool",
+  "version": "0.0.1",
+  "description": "Nodejs 文件比较",
+  "main": "app.js",
+  "dependencies": {
+    "bufferhelper": "~0.2.0",
+    "colors": "~0.6.2",
+    "iconv-lite": "~0.2.11",
+    "diff": "~1.0.7",
+    "async": "~0.2.6"
+  },
+  "bin" : {
+    "ndiff" :"app.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ccforward/nodediff-tool.git"
+  },
+  "author": "cc"
+}
